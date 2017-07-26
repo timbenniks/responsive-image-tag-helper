@@ -40,11 +40,7 @@ namespace mvc.TagHelpers
             return result;
         }
         public string createUrl(string url, string width){
-            // return $"{url}?as=1&w={width}&hash={getHash(width)}";
             return $"{url}/{width}.png";
-        }
-        public string getHash(string width){
-            return "78612378123867132786123867123786";
         }
         public string createFallback(){
             return createUrl(BaseImageUrl, FallbackSize);
