@@ -40,8 +40,7 @@ namespace mvc.TagHelpers
             return result;
         }
         public string createUrl(string url, string width){
-            // return $"{url}?as=1&w={width}&hash={getHash(width)}";
-            return $"{url}/{width}.png";
+            return $"{url}?as=1&w={width}&hash={getHash(width)}";
         }
         public string getHash(string width){
             return "78612378123867132786123867123786";
